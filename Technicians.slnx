@@ -1,3 +1,7 @@
 <Solution>
-  <Project Path="Technicians/Technicians.csproj" />
+  <Folder Name="/services/" />
+  <Folder Name="/viewModels/" />
+  <Project Path="Technicians/Technicians.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
 </Solution>
