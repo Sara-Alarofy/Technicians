@@ -1,0 +1,11 @@
+
+
+namespace Techicians.services ;                                 
+using Techicians.Models;
+
+public interface IDraftStore 
+{
+Task SaveAsync(DraftSnapshot snapshot);
+Task <DraftSnapshot?>loabAsync();
+Task ClearAsync();
+}

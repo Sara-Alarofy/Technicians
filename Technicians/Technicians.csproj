@@ -71,7 +71,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="models\" />
 	  <Folder Include="views\" />
 	</ItemGroup>
 

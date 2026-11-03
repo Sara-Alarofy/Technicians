@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System.Diagnostics;
 
 namespace Technicians
 {
@@ -11,7 +11,21 @@ namespace Technicians
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            var window = new Window(new AppShell());
+            window.Created += (s, e) => Log("created");
+            window.Activated += (s, e) => Log("Activated");
+            window.Deactivated += (s, e) => Log("Deactivated");
+            window.Stopped += (s, e) => Log("Stopped");
+            window.Resumed += (s, e) => Log("Resumed");
+            window.Destroying += (s, e) => Log("Destroying");
+
+            return window;
         }
+        static void Log(string name) =>
+            Debug.WriteLine($"[Technicians\r\n]{DateTime.Now:HH:mm:ss:fff}{name}");
+
+
+
     }
+
 }
