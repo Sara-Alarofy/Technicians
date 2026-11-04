@@ -4,8 +4,12 @@ using System.Text;
 
 namespace Technicians.models
 {
-    //internal class DraftSnapshot
-    public record DraftSnapshot(int Version, int StepNumber, string TechnicianName, string ServiceCategory);
+                                                    // حفظ بيانات الفني مؤقتةً 
+    public record DraftSnapshot(
+        int Version, 
+        int StepNumber, 
+        string TechnicianName,
+        string ServiceCategory);
    
 
 }

@@ -1,12 +1,13 @@
 <Solution>
   <Folder Name="/services/">
-    <File Path="IUserService" />
+    <File Path="IDrafStore.cs" />
     <File Path="PreferencesDraftStore.cs" />
   </Folder>
   <Folder Name="/viewModels/">
     <File Path="AppShell.xaml" />
     <File Path="OnboardingViewModel.cs" />
     <File Path="OnboardingViewModel.xaml" />
+    <File Path="TechnicianRegistratiomViewModel.cs" />
   </Folder>
   <Project Path="Technicians/Technicians.csproj">
     <Deploy Solution="Debug|*" />
